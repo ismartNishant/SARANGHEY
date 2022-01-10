@@ -21,7 +21,7 @@ import {
 } from "react-router-dom";
 import GoTop from './components/GoTopOnclick';
 // import LoadingBar from 'react-top-loading-bar';
-import ScaleLoader from "react-spinners/ScaleLoader";
+import HashLoader from "react-spinners/HashLoader";
 import { css } from "@emotion/react";
 // Can be a string as well. Need to ensure each key-value pair ends with ;
 const override = css`
@@ -64,8 +64,8 @@ const App = () => {
     <div>
       {loading ?
         <div className='myloader'>
-          <ScaleLoader  css={override} color={"#e23b64"} loading={loading} size={15} />
-          <h3>LOADING<i class='bx bxs-circle bx-fade' ></i><i class='bx bxs-circle bx-fade-right'></i><i class='bx bxs-circle bx-fade-right' ></i><i class='bx bxs-circle bx-fade-right'></i></h3>
+          <HashLoader  css={override} color={"#870cb8"} loading={loading} size={50} />
+          <h3>LOADING<i className='bx bxs-circle bx-fade' ></i><i className='bx bxs-circle bx-fade-right'></i><i className='bx bxs-circle bx-fade-right' ></i><i className='bx bxs-circle bx-fade-right'></i></h3>
         </div>
         :
         (<Router>
@@ -74,10 +74,21 @@ const App = () => {
             <Navbar mode={mode} toggleMode={toggleMode} />
 
             <Routes>
-              <Route path="/" element={<><TopSlider mode={mode} toggleMode={toggleMode} />
-                <SupriceItem mode={mode} toggleMode={toggleMode} />
-                <Gallery1 mode={mode} toggleMode={toggleMode} />
+              <Route path="/" element={
+                <><TopSlider mode={mode} toggleMode={toggleMode} />
+                  <SupriceItem mode={mode} toggleMode={toggleMode} />
+                  <Gallery1 mode={mode} toggleMode={toggleMode} />
+                  <SpecialItem mode={mode} toggleMode={toggleMode} />
+                </>}>
+              </Route>
+              <Route path="/suprise" element={<>
+                  <SupriceItem mode={mode} toggleMode={toggleMode} />
+                  <Gallery1 mode={mode} toggleMode={toggleMode} />
+                </>}>
+              </Route>
+              <Route path="/special" element={<>
                 <SpecialItem mode={mode} toggleMode={toggleMode} />
+                <Gallery1 mode={mode} toggleMode={toggleMode} />
               </>}>
               </Route>
               <Route path="/tour" element={<Tour mode={mode} toggleMode={toggleMode} />}></Route>

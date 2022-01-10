@@ -36,13 +36,13 @@ export default function Navbar(props) {
                             <Link className="nav-link active" aria-current="page" style={{color:forColor}}  to="/"><i className="fas fa-home"></i> Home</Link>
                         </li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle"  style={{color:forColor}}  href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            <a className="nav-link dropdown-toggle"  style={{color:forColor}}  href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 <i className="fas fa-search"></i> Explore
                             </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown" style={{background:forBg}}>
-                                <li><a className="dropdown-item" style={{color:forColor}}  href="#suprise">Suprise Events</a></li>
-                                <li><a className="dropdown-item" style={{color:forColor}}  href="#special">Special Events</a></li>
+                                <li><Link className="dropdown-item" style={{color:forColor}}  to="/suprise">Suprise Events</Link></li>
+                                <li><Link className="dropdown-item" style={{color:forColor}}  to="/special">Special Events</Link></li>
                             </ul>
                         </li>
                         <li className="nav-item">
@@ -58,7 +58,7 @@ export default function Navbar(props) {
                     <form className="d-flex">
                         <a className="btn primary" href="./login1/login.html">Sign In</a>
                     </form>
-                    <i class={`bx mybx bxs-${props.mode === 'white'?'moon':'sun'} bx-${props.mode === 'white'?'':'spin'}`} 
+                    <i className={`bx mybx bxs-${props.mode === 'white'?'moon':'sun'} bx-${props.mode === 'white'?'':'spin'}`} 
                     onClick={props.toggleMode} style={{color:props.mode ==='dark'?'#FFAB4C':'#C2FFF9'}}></i>
                 </div>
             </div>

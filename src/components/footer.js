@@ -1,5 +1,6 @@
 import './css/component.css';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Footer(props) {
     let forColor = props.mode === 'dark' ? '#fff' : '#000';
@@ -13,16 +14,16 @@ function Footer(props) {
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus iste unde reprehenderit vitae
                         consequatur incidunt totam aperiam culpa. Repellat, fugiat?</p>
                 </div>
-                <div className="foo-box" style={{ color: forColor }}>
+                <div className="foo-box inner-footer" style={{ color: forColor }}>
                     <h3 className="ftitle"> <span>Quick links </span> <i className="fas fa-link"></i> </h3>
-                    <a style={{ color: forColor }} href="#">Home</a>
-                    <a style={{ color: forColor }} href="#suprise">Suprise Events</a>
-                    <a style={{ color: forColor }} href="#special">Special Events</a>
-                    <a style={{ color: forColor }} href="#gallery">Gallery</a>
-                    <a style={{ color: forColor }} href="#reviews">Reviews</a>
-                    <a style={{ color: forColor }} href="#about">About</a>
+                    <Link style={{ color: forColor }} to="/"><i className="fas fa-home"></i> Home</Link>
+                    <Link style={{ color: forColor }} to="/suprise"><i className="fas fa-bolt"></i> Suprise Events</Link>
+                    <Link style={{ color: forColor }} to="/special"><i className="fas fa-bolt"></i> Special Events</Link>
+                    <Link style={{ color: forColor }} to="/"><i class="fas fa-images"></i> Gallery</Link>
+                    <Link style={{ color: forColor }} to="/"><i class="far fa-star"></i> Reviews</Link>
+                    <Link style={{ color: forColor }} to="/aboutus"><i class="fas fa-portrait"></i> About</Link>
                 </div>
-                <div className="foo-box" style={{ color: forColor }}>
+                <div className="foo-box inner-footer" style={{ color: forColor }}>
                     <h3 className="ftitle"> <span>Contact us</span>  <i className="fas fa-phone"></i> </h3>
                     <p> <i className="fas fa-map-marker-alt"></i> Nagad, india 431103 </p>
                     <p> <i className="fas fa-envelope"></i> nishantrajputa11.com </p>

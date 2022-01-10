@@ -728,6 +728,7 @@ nav {
 }
 .footer .footer-container .foo-box a,
 .footer .footer-container .foo-box p {
+  transition: all .5s ease-in-out;
   font-size: 1rem;
 }
 .footer .footer-container .foo-box p {
@@ -742,6 +743,19 @@ nav {
   font-family: "Merienda", cursive;
   margin-bottom: 0rem;
 }
+.footer .inner-footer a:hover,
+.footer .inner-footer p:hover {
+  margin-left: 0.5rem;
+  cursor:pointer;
+}
+.footer .inner-footer a i{
+  font-size: .9rem ;
+  color:var(--third) !important;
+  margin-right: .5rem;
+  margin-top: .1rem;
+}
+
+
 .footer .footer-container .foo-box p i,
 .navbar-nav li a i,
 .footer .footer-container .foo-box h3 i {
@@ -923,7 +937,7 @@ nav {
     padding: 0rem 2rem !important;
   }
   .about-content {
-    padding: .5rem 0rem 1rem 0rem;
+    padding: 0.5rem 0rem 1rem 0rem;
   }
   .about-content h1 {
     padding: 0.5em 0em;
