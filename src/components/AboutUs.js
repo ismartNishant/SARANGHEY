@@ -5,20 +5,20 @@ function AboutUs(props) {
     let forBg = props.mode === 'dark' ? '#000' : '#fff';
     return (
         <section className="services about-us" style={{ background: forBg, color: forColor }}>
-            <h1 className="title" style={{borderColor:forColor}}><span className="px-4 pb-1">About Us</span></h1>
+            <h1 className="title" style={{ borderColor: forColor }}><span className="px-4 pb-1">About Us</span></h1>
             <div className="row py-2 " >
                 <div className="col-lg-6 inner-about ">
                     <div className="about-content">
-                        <h1>Who We are <i className="fas fa-question" style={{color:"#e23b64"}}></i></h1>
-                        <p className="py-3 m-0">"Lorem ipsumve tempor incididunt ut labore et dolore magna aliqua. 
+                        <h1>Who We are <i className="fas fa-question" style={{ color: "#e23b64" }}></i></h1>
+                        <p className="py-3 m-0">"Lorem ipsumve tempor incididunt ut labore et dolore magna aliqua.
                             Quis ipsum suspendisse ultricesniami ut aliquip ex ea commodo consequat.tempor incididunt ut
-                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices Duis aute irure dolor in reprehenderit 
+                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices Duis aute irure dolor in reprehenderit
                             in voluptate velit esse olor in reprehenderit in voluptate velit esse"</p>
                         <div className="about-social">
-                            <a style={{ color: forColor }} href="#"><i className="fab fa-facebook-square"></i></a>
-                            <a style={{ color: forColor }} href="#"><i className="fab fa-instagram"></i></a>
-                            <a style={{ color: forColor }} href="#"><i className="fab fa-twitter-square"></i></a>
-                            <a style={{ color: forColor }} href="#"><i className="fab fa-youtube"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100018164203660"><i className="fab fa-facebook-square" style={{ color: "#4267B2" }}></i></a>
+                            <a href="https://www.instagram.com/being_sarcastic_14/"><i className="fab fa-instagram" style={{ color: "#f53657" }}></i></a>
+                            <a href="https://twitter.com/ismart_Nishant?s=09"><i className="fab fa-twitter-square" style={{ color: "#39d7f7" }}></i></a>
+                            <a href="https://www.youtube.com/channel/UCyPK-B4DU7j7TwFb90_I8pQ"><i className="fab fa-youtube" style={{ color: "red" }}></i></a>
                         </div>
                     </div>
                 </div>
@@ -41,7 +41,7 @@ function AboutUs(props) {
                             </div>
                         </div>
                         <div className="col">
-                            <div className="card h-100" style={{ background: forBg, color: forColor}}>
+                            <div className="card h-100" style={{ background: forBg, color: forColor }}>
                                 <img src="./images/g2.jpg" className="card-img-top" alt="..." />
                                 <div className="card-body">
                                     <h4 className="">Festival</h4>
@@ -49,7 +49,7 @@ function AboutUs(props) {
                             </div>
                         </div>
                         <div className="col">
-                            <div className="card h-100" style={{ background: forBg, color: forColor}}>
+                            <div className="card h-100" style={{ background: forBg, color: forColor }}>
                                 <img src="./images/g2.jpg" className="card-img-top" alt="..." />
                                 <div className="card-body">
                                     <h4 className="">Events</h4>
@@ -57,7 +57,7 @@ function AboutUs(props) {
                             </div>
                         </div>
                         <div className="col">
-                            <div className="card h-100" style={{ background: forBg, color: forColor}}>
+                            <div className="card h-100" style={{ background: forBg, color: forColor }}>
                                 <img src="./images/g2.jpg" className="card-img-top" alt="..." />
                                 <div className="card-body">
                                     <h4 className="">Weekends Dhamal</h4>
@@ -111,7 +111,7 @@ function AboutUs(props) {
 
                                     </div>
                                     <textarea placeholder="Comment"></textarea>
-                                    <button type="submit"  style={{color:forColor}} className="site-btn">Send Message</button>
+                                    <button type="submit" style={{ color: forColor }} className="site-btn">Send Message</button>
                                 </form>
                             </div>
                         </div>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './css/component.css';
 
 
-export default function Top(props) {
+export default function Navbar(props) {
     let forColor = props.mode === 'dark' ? '#fff' : '#000';
     let forBg = props.mode === 'dark' ? '#000' : '#fff';
     let shad = props.mode ==='dark'?'1px 1px 10px rgba(250, 250, 250, 0.411)':'1px 1px 10px rgba(0, 0, 0, 0.711)';
