@@ -15,29 +15,29 @@ function Service(props) {
                     <div className="col-lg-6 p-0">
                         <div className="row services__list p-0">
                             <div className="col-lg-6  order-lg-1 col-md-6 order-md-1">
-                                <div className="service__item deep-bg" style={{ color: forBg }}>
-                                    <img src="./images/services/service-1.png" alt="" />
+                                <div className="service__item deep-bg">
+                                    <i class="fas fa-heart"></i>
                                     <h4>Wedding</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                                 </div>
                             </div>
                             <div className="col-lg-6 order-lg-2 col-md-6 order-md-2">
                                 <div className="service__item">
-                                    <img src="./images/services/service-2.png" alt="" />
+                                    <i class="fas fa-glass-cheers"></i>
                                     <h4>Clubs and bar</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                                 </div>
                             </div>
                             <div className="col-lg-6  order-lg-4 col-md-6 order-md-4">
-                                <div className="service__item deep-bg" style={{ color: forBg }}>
-                                    <img src="./images/services/service-4.png" alt="" />
+                                <div className="service__item deep-bg" >
+                                    <i class="fas fa-drum"></i>
                                     <h4>DJ lessons</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                                 </div>
                             </div>
                             <div className="col-lg-6  order-lg-3 col-md-6 order-md-3">
                                 <div className="service__item">
-                                    <img src="./images/services/service-3.png" alt="" />
+                                <i class="fas fa-store-alt"></i>
                                     <h4>Corporate events</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                                 </div>

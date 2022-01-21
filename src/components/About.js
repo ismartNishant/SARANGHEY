@@ -9,7 +9,7 @@ function About(props) {
                     <div className="about-content ">
                         <h1>More about the package here</h1>
                         <h3>INR ₹3000</h3>
-                        <p>"Lorem ipsumveniami ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse"</p>
+                        <p>"Lorem ipsumvami ut aliq ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse"</p>
                         <a className="btn primary" href="#">Book Now</a>
                     </div>
                 </div>

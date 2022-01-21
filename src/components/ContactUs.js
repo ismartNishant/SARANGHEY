@@ -5,9 +5,11 @@ import './css/component.css';
 export default function ContactUs(props) {
     let forColor = props.mode === 'dark' ? '#fff' : '#000';
     let forBg = props.mode === 'dark' ? '#000' : '#fff';
+    let forHeading = props.mode === 'dark' ? '#ffffff0a' : '#00000017';
+
     return (
         <section className="contact-us" style={{ background: forBg, color: forColor }}>
-            <h1 className="title" style={{ borderColor: forColor }}><span className="px-4 pb-1">Contact Us</span></h1>
+            <h1 className="title" style={{backgroundColor:forHeading }}><span className="px-4 pb-1">Contact Us</span></h1>
             <div className="map">
                 <div className="">
                     <iframe

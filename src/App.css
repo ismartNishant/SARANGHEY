@@ -1,13 +1,16 @@
 .App {
-  justify-content: center;
+    justify-content: center;
 }
+
 .myloader {
-  text-align: center;
-  margin-top: 15rem !important;
+    text-align: center;
+    margin-top: 15rem !important;
 }
-.myloader h3{
+
+.myloader h3 {
     margin-top: .8rem;
 }
-.myloader h3 i{
-    font-size:.8rem;
+
+.myloader h3 i {
+    font-size: .8rem;
 }

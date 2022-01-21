@@ -3,9 +3,11 @@ import React from 'react';
 
 function Gallery1(props) {
     let forColor = props.mode === 'dark' ? '#fff' : '#000';
+    let forHeading = props.mode === 'dark' ? '#ffffff0a' : '#00000017';
+
     return (
         <section id="gallery" className="gallery">
-            <h1 className="title" style={{ borderColor: forColor }}><span className="px-4 pb-1">Our gallery</span></h1>
+            <h1 className="title" style={{ backgroundColor:forHeading }}><span className="px-4 pb-1">Our gallery</span></h1>
             <div className="main">
                 <div className="inner-gallery">
                     <div className="img">

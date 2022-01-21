@@ -5,11 +5,13 @@ import { Link } from 'react-router-dom';
 function SpecialItem(props){
   let forColor = props.mode === 'dark' ? '#fff' : '#000';
   let forBg = props.mode === 'dark' ? '#000' : '#fff';
+    let forHeading = props.mode === 'dark' ? '#ffffff0a' : '#00000017';
+
 
     return(
         <section className="special" id="special">
         <div className="special-event-container" id="special-container">
-          <h1 className="title" style={{borderColor:forColor}}><span className="px-4 pb-1"> Special Events</span></h1>
+          <h1 className="title" style={{backgroundColor:forHeading}}><span className="px-4 pb-1"> Special Events</span></h1>
           <div className="row row-cols-1 row-cols-md-2 g-3">
             <div className="col">
               <div className="card h-100">

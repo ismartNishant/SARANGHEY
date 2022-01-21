@@ -1,10 +1,12 @@
 import React from 'react';
 import './css/component.css';
 
-function Gallery2() {
+function Gallery2(props) {
+    let forHeading = props.mode === 'dark' ? '#ffffff0a' : '#00000017';
+
     return (
         <div className="pt-2 pb-3 px-4">
-            <h1 className="title"><span style={{borderColor:"#000"}}> Gallery</span></h1>
+            <h1 className="title" style={{ backgroundColor:forHeading}} ><span style={{borderColor:"#000"}}> Gallery</span></h1>
             <div className="row gal">
                 <div className="column">
                     <img src="./images/gallery/g2.jpg"  alt=".."/>

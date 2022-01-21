@@ -81,19 +81,21 @@ const App = () => {
                   <SpecialItem mode={mode} toggleMode={toggleMode} />
                 </>}>
               </Route>
-              <Route path="/suprise" element={<>
+              <Route path="/suprise" element={<div className="speandsup">
                   <SupriceItem mode={mode} toggleMode={toggleMode} />
                   <Gallery1 mode={mode} toggleMode={toggleMode} />
-                </>}>
+                </div>}>
               </Route>
-              <Route path="/special" element={<>
+              <Route path="/special" element={<div className="speandsup">
                 <SpecialItem mode={mode} toggleMode={toggleMode} />
                 <Gallery1 mode={mode} toggleMode={toggleMode} />
-              </>}>
+              </div>}>
               </Route>
               <Route path="/tour" element={<Tour mode={mode} toggleMode={toggleMode} />}></Route>
-              <Route path="/aboutus" element={<AboutUs mode={mode} toggleMode={toggleMode} />}></Route>
-              <Route path="/contactus" element={<ContactUs mode={mode} toggleMode={toggleMode} />}> </Route>
+              <Route path="/aboutus" element={
+              <div className="speandsup"><AboutUs mode={mode} toggleMode={toggleMode} />
+              </div>}></Route>
+              <Route path="/contactus" element={ <div className="speandsup"><ContactUs mode={mode} toggleMode={toggleMode} /></div>}> </Route>
             </Routes>
             <Service mode={mode} toggleMode={toggleMode} />
             <Newsletter mode={mode} toggleMode={toggleMode} />

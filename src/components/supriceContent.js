@@ -6,11 +6,13 @@ function SupriceItem(props){
   let forColor = props.mode === 'dark' ? '#fff' : '#000';
   let forBg = props.mode === 'dark' ? '#000' : '#fff';
   let forBorder = props.mode === 'dark' ? '#fff' : '#fff';
+    let forHeading = props.mode === 'dark' ? '#ffffff0a' : '#00000017';
+
 
     return(
         <section className="suprise" id="suprise">
         <div className="suprise-container" id="suprise-container">
-          <h1 className="title" style={{borderColor:forColor}}><span className="px-4 pb-1">Suprise Events</span></h1>
+          <h1 className="title" style={{backgroundColor:forHeading}}><span className="px-4 pb-1">Suprise Events</span></h1>
           <div className="row row-cols-1 row-cols-md-2 g-3">
             <div className="col" >
               <div className="card h-100 " style={{borderColor:forBorder}}>

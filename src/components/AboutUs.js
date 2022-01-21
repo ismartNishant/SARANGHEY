@@ -3,9 +3,11 @@ import './css/component.css';
 function AboutUs(props) {
     let forColor = props.mode === 'dark' ? '#fff' : '#000';
     let forBg = props.mode === 'dark' ? '#000' : '#fff';
+    let forHeading = props.mode === 'dark' ? '#ffffff0a' : '#00000017';
+
     return (
         <section className="services about-us" style={{ background: forBg, color: forColor }}>
-            <h1 className="title" style={{ borderColor: forColor }}><span className="px-4 pb-1">About Us</span></h1>
+            <h1 className="title" style={{ backgroundColor: forHeading }}><span className="px-4 pb-1">About Us</span></h1>
             <div className="row py-2 " >
                 <div className="col-lg-6 inner-about ">
                     <div className="about-content">

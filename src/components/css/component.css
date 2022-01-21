@@ -144,19 +144,18 @@ nav {
 .d-flex a {
   font-size: 1.3rem;
 }
-.d-flex a:hover {
-  box-shadow: inset 0px 0px 8px #fff;
-}
 .primary {
   border: 2px solid var(--third) !important;
   color: var(--third) !important;
-  padding: 0px 10px;
+  padding: 1px 15px;
   font-family: "Aladin", cursive;
   background: none;
   transition: all 0.5s linear;
 }
 .primary:hover {
-  transform: scale(1.1);
+  box-shadow: 1px 1px 10px var(--third);
+  margin-left: 1rem;
+  /* transform: scale(1.1); */
 }
 .logo {
   color: var(--third);
@@ -212,9 +211,11 @@ nav {
 }
 .about-social a i {
   font-size: 2.5rem;
+  transition: all .5s ease-in-out;
 }
 .about-social a i:hover {
   color: var(--third) !important;
+  transform:scale(1.3);
 }
 .about-us h1 {
   margin-bottom: 0rem;
@@ -296,6 +297,9 @@ nav {
 /* ---------------------------
         containers  start 
 ------------------------------- */
+.speandsup{
+  padding: 1rem 1rem 0.5rem 1rem;
+}
 .suprise-container {
   justify-content: center;
 }
@@ -304,13 +308,12 @@ nav {
   margin: 0 auto !important;
 }
 .title {
-  text-align: center;
   color: var(--third);
-  border-bottom: 3px solid;
   padding-bottom: 0.4rem;
   margin-bottom: 0.8em;
 }
 .title span {
+  border-left: 4px solid var(--third);
   font-family: "Merienda", cursive;
 }
 .special-event-container .col,
@@ -360,9 +363,10 @@ nav {
   padding: 0.15em 0.5em !important;
   font-weight: bolder !important;
   border: 2px solid var(--third) !important;
+  transition: all 0.5s ease-in-out;
 }
 .btn-primary:hover {
-  transition: all 0.5s linear;
+  margin-left: 0.5rem;
   background: var(--third) !important;
 }
 /* --------containers  end  ------- */
@@ -382,13 +386,17 @@ nav {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.move-up i {
-  background: #e23b64;
-  color: #fff;
-  padding: 0.45rem 0.6rem;
-  border-radius: 8px;
-  font-size: 2rem;
+.move-up:hover {
+  margin-bottom: .5rem;
 }
+.move-up i {
+  background:var(--third);
+  color: #fff;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  font-size: 1.6rem;
+}
+
 /* -------------------------------
      newsletter starts here 
 ----------------------------------*/
@@ -534,13 +542,23 @@ nav {
 .services__list {
   margin: 0;
 }
+.service__item i{
+  font-size: 4rem;
+  color: #fff !important;
+}
 .service__item {
   height: 230px;
-  background: #7c3cb1;
+  background:var(--third);;
   padding: 35px 30px;
 }
+
 .service__item.deep-bg {
-  background: var(--third);
+  background: transparent;
+  border: 2px solid var(--third);
+  box-shadow: 0px 0px 10px var(--third);
+}
+.service__item.deep-bg  i{
+  color: var(--third) !important;
 }
 .service__item h4 {
   font-family: "Merienda", cursive;
@@ -548,6 +566,7 @@ nav {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 10px;
+
 }
 .service__item p {
   font-size: 0.9rem;
@@ -728,7 +747,7 @@ nav {
 }
 .footer .footer-container .foo-box a,
 .footer .footer-container .foo-box p {
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   font-size: 1rem;
 }
 .footer .footer-container .foo-box p {
@@ -746,15 +765,14 @@ nav {
 .footer .inner-footer a:hover,
 .footer .inner-footer p:hover {
   margin-left: 0.5rem;
-  cursor:pointer;
+  cursor: pointer;
 }
-.footer .inner-footer a i{
-  font-size: .9rem ;
-  color:var(--third) !important;
-  margin-right: .5rem;
-  margin-top: .1rem;
+.footer .inner-footer a i {
+  font-size: 0.9rem;
+  color: var(--third) !important;
+  margin-right: 0.5rem;
+  margin-top: 0.1rem;
 }
-
 
 .footer .footer-container .foo-box p i,
 .navbar-nav li a i,
